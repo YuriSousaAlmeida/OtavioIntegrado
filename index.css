@@ -23,12 +23,32 @@ a {
 }
 
 #navbar-container {
-    width: 80%;
-    height: 100%;
+    list-style-type: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: space-between;
+    
+}
+
+nav {
     display: flex;
-    justify-content: space-between;
+    text-align: center;
+    justify-content: center;
     align-items: center;
 }
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: inline-flex;
+    justify-content: space-between;
+  }
+  
+  nav li {
+    margin-right: 20px;
+  }
 
 #navbar-items {
     display: flex;
@@ -94,11 +114,13 @@ img{
     width: 350px;
 }
 
+#conquistas {
+ text-align: left;
+}
 .contatin{
     font-size: 2.2rem;
     text-transform: uppercase;
     font-weight: bold;
-    text-align: center;
     padding-bottom: 50px;
     letter-spacing: 2px;
 }
@@ -164,6 +186,9 @@ img{
     width: 80%;
     margin: auto;
     display: flex;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    column-gap: 10px;
     align-items: center;
     flex-direction: column;
 }
@@ -175,6 +200,10 @@ img{
     margin: 15px;
 }
 
+#earning {
+    width: 20px;
+}
+
 #footer {
     position: fixed;
     bottom: 0;
@@ -184,4 +213,17 @@ img{
     color: #ffffff; 
 
     text-align: center;     
+  }
+
+  .cursos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+  }
+  
+  .card {
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
   }
